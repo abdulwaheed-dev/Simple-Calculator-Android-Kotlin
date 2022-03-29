@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import net.objecthunter.exp4j.ExpressionBuilder
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,6 +79,13 @@ class MainActivity : AppCompatActivity() {
         }
         btnPercentage.setOnClickListener(){
             mainScreen.text = mainScreen.text.toString()+"%"
+        }
+        btnEqual.setOnClickListener(){
+            var ans = mainScreen.text.toString()
+            val eval = ExpressionBuilder(ans).build()
+            val res = eval.evaluate()
+            mainScreen.text = res.toString()
+
         }
 
     }
