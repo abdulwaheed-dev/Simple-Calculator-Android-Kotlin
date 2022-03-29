@@ -29,5 +29,54 @@ class MainActivity : AppCompatActivity() {
         var btnPercentage = findViewById<Button>(R.id.btnPercentage)
         var btnEqual = findViewById<Button>(R.id.btnEqual)
 
+        btn0.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"0"
+        }
+        btn1.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"1"
+        }
+        btn2.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"2"
+        }
+        btn3.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"3"
+        }
+        btn4.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"4"
+        }
+        btn5.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"5"
+        }
+        btn6.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"6"
+        }
+        btn7.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"7"
+        }
+        btn8.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"8"
+        }
+        btn9.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"9"
+        }
+        btnAC.setOnClickListener(){
+            mainScreen.text = ""
+        }
+        btnAdd.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"+"
+        }
+        btnDivide.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"/"
+        }
+        btnMinus.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"-"
+        }
+        btnMultiply.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"*"
+        }
+        btnPercentage.setOnClickListener(){
+            mainScreen.text = mainScreen.text.toString()+"%"
+        }
+
     }
 }
